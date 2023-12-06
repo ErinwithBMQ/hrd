@@ -1,5 +1,5 @@
 # hrd
-A game whose name is ShuZiHuaRongDao
+南京大学 C程序设计（一层次）期末大作业——数字华容道
 
 github网址：https://github.com/ErinwithBMQ/hrd
 
