@@ -1,9 +1,17 @@
 # hrd
 A game whose name is ShuZiHuaRongDao
 
+github网址：https://github.com/ErinwithBMQ/hrd
+
 数字华容道
 ===
-欢迎你游玩本游戏！在开始游戏前，有以下几个注意事项：
+欢迎你游玩本游戏！
+
+本游戏利用EasyX图形库，使用Clion进行编写大部分代码，编译也都是Clion所带编译器进行。
+
+在github上下载完zip后，进行正确解压即可使用Clion对其进行修改。
+
+在开始游戏前，有以下几个注意事项：
 
 游戏安装
 ---
