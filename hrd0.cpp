@@ -172,7 +172,7 @@ void Paintline3();
 //以下是处理5*5棋盘的函数.效果基本同上
 bool is_well5(int pan[][5]);
 bool if_tran5(int row, int col);
-void tran_pan3(int row, int col, int row_n, int col_n, int pan[][5]);
+void tran_pan5(int row, int col, int row_n, int col_n, int pan[][5]);
 void Paintshu5(int n, int x, int y);
 void Paintcount5(int n);
 void Paintline5();
