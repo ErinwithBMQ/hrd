@@ -49,10 +49,45 @@ void photo_zhuye()
     putimage(0, 0, &mage);
 }
 
-void photo_youxi()
+void photo_youxi3()
 {
     IMAGE mage;
     loadimage(&mage, "back2.jpg");
+    putimage(0, 0, &mage);
+}
+
+void photo_youxi4()
+{
+    IMAGE mage;
+    loadimage(&mage, "back3.jpg");
+    putimage(0, 0, &mage);
+}
+
+void photo_youxi5()
+{
+    IMAGE mage;
+    loadimage(&mage, "back4.jpg");
+    putimage(0, 0, &mage);
+}
+
+void photo_youxi_win()
+{
+    IMAGE mage;
+    loadimage(&mage, "back6.jpg");
+    putimage(0, 0, &mage);
+}
+
+void photo_youxi_lose()
+{
+    IMAGE mage;
+    loadimage(&mage, "back5.jpg");
+    putimage(0, 0, &mage);
+}
+
+void photo_youxi_record()
+{
+    IMAGE mage;
+    loadimage(&mage, "back7.jpg");
     putimage(0, 0, &mage);
 }
 
@@ -242,7 +277,7 @@ void record() {
     int i;
     setbkcolor(WHITE);
     cleardevice();
-    photo_zhuye();
+    photo_youxi_record();
     while (1)
     {
         MOUSEMSG m;
@@ -552,7 +587,7 @@ void choose3() //3*3ÆåÅÌ
 
         cleardevice();
         BeginBatchDraw(); //¿ªÊ¼ÅúÁ¿»æÍ¼
-        photo_youxi();
+        photo_youxi3();
         Paintline3();
 
         Paintcount3(count); //ÏÔÊ¾²½Êý
@@ -704,7 +739,7 @@ void choose4() //4*4ÆåÅÌ
 
         cleardevice();
         BeginBatchDraw(); //¿ªÊ¼ÅúÁ¿»æÍ¼
-        photo_youxi();
+        photo_youxi4();
         Paintline();
         Paintcount(count); //ÏÔÊ¾²½Êý
 
@@ -1011,7 +1046,7 @@ void choose5()
 
         cleardevice();
         BeginBatchDraw(); //¿ªÊ¼ÅúÁ¿»æÍ¼
-        photo_youxi();
+        photo_youxi5();
         Paintline5();
 
         Paintcount5(count); //ÏÔÊ¾²½Êý
@@ -1217,7 +1252,7 @@ void Paintendyes() {                                                       //»æÖ
     char c[100] = { 0 };
     setbkcolor(WHITE);
     cleardevice();
-    photo_zhuye();
+    photo_youxi_win();
     PlaySound(NULL, NULL, NULL);
     BGM_win();
     rectangle(120, 100, 220, 150);
@@ -1266,7 +1301,7 @@ void Paintendno() {                                             //»æÖÆ·ÅÆúÓÎÏ·½ç
     char c[100] = { 0 };
     setbkcolor(WHITE);
     cleardevice();
-    photo_zhuye();
+    photo_youxi_lose();
     PlaySound(NULL, NULL, NULL);
     BGM_lose();
     rectangle(120, 100, 220, 150);
