@@ -1,4 +1,4 @@
-#请注意：由于操作问题，现在所有更新均在main分支下进行，本分支已废弃。请选择到main分支里查看最新文件！
+# 请注意：由于操作问题，现在所有更新均在main分支下进行，本分支已废弃。请选择到main分支里查看最新文件！
 
 # hrd
 A game whose name is ShuZiHuaRongDao
