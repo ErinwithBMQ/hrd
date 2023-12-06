@@ -1,7 +1,3 @@
-//
-// Created by huawei on 2023/11/22.
-//
-
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<graphics.h>
 #include<stdio.h>
