@@ -1142,7 +1142,6 @@ void choose5()
     finalrecord[num].judge = 1;
     finalrecord[num].timeused = timeused;
     Paintendyes();
-
     getchar();
     closegraph();
 }
