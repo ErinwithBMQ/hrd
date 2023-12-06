@@ -1,3 +1,6 @@
-解压至D盘。路径应为D:/hrd/cmake-build-debug/hrd0.exe（全英文路径！！！）
+项目已在github上开源。网址：https://github.com/ErinwithBMQ/hrd
+具体说明可见网址内README文件。
+
+解压至D盘。路径应为D:/hrd/cmake-build-debug/hrd0.exe
 主页面、难度选择页面、游戏记录页面都是鼠标点击操作
 游戏页面是键盘操作，请先把电脑设置——系统——开发者选项——终端 改成“Windows控制台主机”.按上下左右以模拟移动滑块操作，按esc返回主页面
