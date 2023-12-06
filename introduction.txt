@@ -1,6 +1,5 @@
 项目已在github上开源。网址：https://github.com/ErinwithBMQ/hrd
-具体说明可见网址内README文件。
-请注意，在github上查看文件时，选择main分支！
+具体说明可见README.md文件。
 
 解压至D盘。路径应为D:/hrd/cmake-build-debug/hrd0.exe
 主页面、难度选择页面、游戏记录页面都是鼠标点击操作

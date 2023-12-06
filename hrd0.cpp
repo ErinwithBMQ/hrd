@@ -11,10 +11,7 @@
 //œ¬√Ê «≤•∑≈±≥æ∞“Ù¿÷µƒ∫Ø ˝
 void BGM()
 {
-    mciSendStringW(L"open D:\\\\hrd\\\\music\\\\a.wav alias mymusic", 0, 0, 0);
-    mciSendStringW(L"play mymusic", 0, 0, 0);
-    mciSendStringW(L"play mymusic repeat", 0, 0, 0); //  π”√ 'repeat' ≤Œ ˝¿¥—≠ª∑≤•∑≈
-    mciSendStringW(L"seek mymusic1 to start", 0, 0, 0);
+    PlaySound("D:\\hrd\\music\\a.wav", NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
 }
 
 void BGM_buttom()
@@ -991,11 +988,11 @@ void Paintline5() {
 
 void choose5()
 {
-    int huarongdao[5][5] = { {5,7,3,2,16},
-                            {9,1,8,12,17},
+    int huarongdao[5][5] = { {5,7,3,2,24},
+                            {9,23,8,12,17},
                             {15,6,13,14,18},
                             {19,10,20,22,11},
-                            {23,4,21,24,0} };
+                            {1,4,21,16,0} };
     //∂‘∆Â≈ÃΩ¯––≥ı ºªØ
 
     int row_n = 4;
@@ -1221,7 +1218,7 @@ void Paintendyes() {                                                       //ªÊ÷
     setbkcolor(WHITE);
     cleardevice();
     photo_zhuye();
-    mciSendStringW(L"close mymusic", 0, 0, 0);
+    PlaySound(NULL, NULL, NULL);
     BGM_win();
     rectangle(120, 100, 220, 150);
     setlinecolor(BLACK);
@@ -1270,7 +1267,7 @@ void Paintendno() {                                             //ªÊ÷∆∑≈∆˙”Œœ∑ΩÁ
     setbkcolor(WHITE);
     cleardevice();
     photo_zhuye();
-    mciSendStringW(L"close mymusic", 0, 0, 0);
+    PlaySound(NULL, NULL, NULL);
     BGM_lose();
     rectangle(120, 100, 220, 150);
     setlinecolor(BLACK);
