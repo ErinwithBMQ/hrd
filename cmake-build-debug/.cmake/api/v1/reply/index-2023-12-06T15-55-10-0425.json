@@ -11,31 +11,31 @@
 			"cmake" : "F:/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe",
 			"cpack" : "F:/CLion 2023.2.2/bin/cmake/win/x64/bin/cpack.exe",
 			"ctest" : "F:/CLion 2023.2.2/bin/cmake/win/x64/bin/ctest.exe",
-			"root" : "F:/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26"
+			"root" : "F:/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.27"
 		},
 		"version" : 
 		{
 			"isDirty" : false,
 			"major" : 3,
-			"minor" : 26,
-			"patch" : 4,
-			"string" : "3.26.4",
+			"minor" : 27,
+			"patch" : 0,
+			"string" : "3.27.0",
 			"suffix" : ""
 		}
 	},
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-e0b556736e6e96be9989.json",
+			"jsonFile" : "codemodel-v2-54d1b3e6f737b8586120.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
 				"major" : 2,
-				"minor" : 5
+				"minor" : 6
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-35d9149d304aa005e37e.json",
+			"jsonFile" : "cache-v2-6bc657fcdcc900b80d01.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-a74b4bbcd0c57d9a5d0b.json",
+			"jsonFile" : "cmakeFiles-v1-1bb4f90dc485f1a03fe7.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -53,7 +53,7 @@
 			}
 		},
 		{
-			"jsonFile" : "toolchains-v1-27a4edaa75ad4137415a.json",
+			"jsonFile" : "toolchains-v1-69a1c795261eda6d3917.json",
 			"kind" : "toolchains",
 			"version" : 
 			{
@@ -66,7 +66,7 @@
 	{
 		"cache-v2" : 
 		{
-			"jsonFile" : "cache-v2-35d9149d304aa005e37e.json",
+			"jsonFile" : "cache-v2-6bc657fcdcc900b80d01.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -76,7 +76,7 @@
 		},
 		"cmakeFiles-v1" : 
 		{
-			"jsonFile" : "cmakeFiles-v1-a74b4bbcd0c57d9a5d0b.json",
+			"jsonFile" : "cmakeFiles-v1-1bb4f90dc485f1a03fe7.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -86,17 +86,17 @@
 		},
 		"codemodel-v2" : 
 		{
-			"jsonFile" : "codemodel-v2-e0b556736e6e96be9989.json",
+			"jsonFile" : "codemodel-v2-54d1b3e6f737b8586120.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
 				"major" : 2,
-				"minor" : 5
+				"minor" : 6
 			}
 		},
 		"toolchains-v1" : 
 		{
-			"jsonFile" : "toolchains-v1-27a4edaa75ad4137415a.json",
+			"jsonFile" : "toolchains-v1-69a1c795261eda6d3917.json",
 			"kind" : "toolchains",
 			"version" : 
 			{
