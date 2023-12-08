@@ -212,7 +212,9 @@ void Paintshu5(int n, int x, int y);
 void Paintcount5(int n);
 void Paintline5();
 
-
+//4*4 5*5棋盘随机打乱函数
+void suiji_4(int puzzle[][4], int *empty_row, int *empty_column);
+void suiji_5(int puzzle[][5], int *empty_row, int *empty_column);
 
 int main() {
     initgraph(win_width, win_length);
@@ -717,15 +719,13 @@ void choose3() //3*3棋盘
 
 void choose4() //4*4棋盘
 {
-    int huarongdao[4][4] = { {5,7,3,2},
-                            {9,1,8,12},
-                            {15,6,13,14},
-                            {10,4,11,0} };
-    //对棋盘进行初始化
+    int huarongdao[4][4] = {0};
+    int row_n, col_n;
+    int *empty_row = &row_n;
+    int *empty_col = &col_n;
 
-    int row_n = 3;
-    int col_n = 3;
-    //对目前空位所在位置初始化
+    suiji_4(huarongdao,empty_row,empty_col);
+    //对棋盘进行初始化
 
     int count = 0; //统计移动步数
     int time1, time2, timeused;
@@ -1023,16 +1023,12 @@ void Paintline5() {
 
 void choose5()
 {
-    int huarongdao[5][5] = { {5,7,3,2,24},
-                            {9,23,8,12,17},
-                            {15,6,13,14,18},
-                            {19,10,20,22,11},
-                            {1,4,21,16,0} };
+    int huarongdao[5][5] = {0};
+    int row_n, col_n;
+    int *empty_row = &row_n;
+    int *empty_col = &col_n;
+    suiji_5(huarongdao, empty_row, empty_col);
     //对棋盘进行初始化
-
-    int row_n = 4;
-    int col_n = 4;
-    //对目前空位所在位置初始化
 
     int count = 0; //统计移动步数
     int time1, time2, timeused;
@@ -1340,6 +1336,97 @@ void Paintendno() {                                             //绘制放弃游戏界
         switch (a)
         {
         case 1:chushi(); break;
+        }
+    }
+}
+
+void suiji_4(int puzzle[][4], int *empty_row, int *empty_column) {
+    srand(time(NULL));
+
+    int num = 1;
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            puzzle[i][j] = num;
+            num++;
+        }
+    }
+    puzzle[3][3] = 0;
+    *empty_row = 3;
+    *empty_column = 3;
+
+    int count = 400;
+    for (int i=0; i<count; i++) {
+        // 随机选择相邻的一个位置进行交换
+        int neighbours[4][2] = { {*empty_row, *empty_column-1}, {*empty_row, *empty_column+1}, {*empty_row-1, *empty_column}, {*empty_row+1, *empty_column} };
+        int neighbours_can[4][2];
+        int neighbours_count = 0;
+        for (int j=0; j<4; j++) {
+            int row = neighbours[j][0], column = neighbours[j][1];
+            if (row >= 0 && row < 4 && column >= 0 && column < 4) {
+                neighbours_can[neighbours_count][0] = row;
+                neighbours_can[neighbours_count][1] = column;
+                neighbours_count++;
+            }
+        }
+
+        if (neighbours_count != 0) {
+            int rand_index = rand() % neighbours_count;
+            int chosen_row = neighbours_can[rand_index][0], chosen_column = neighbours_can[rand_index][1];
+            // 交换数字和空格位置
+            int temp = puzzle[chosen_row][chosen_column];
+            puzzle[chosen_row][chosen_column] = puzzle[*empty_row][*empty_column];
+            puzzle[*empty_row][*empty_column] = temp;
+            // 更新空格位置
+            *empty_row = chosen_row;
+            *empty_column = chosen_column;
+        }
+    }
+}
+
+void suiji_5(int puzzle[][5], int *empty_row, int *empty_column) {
+    srand(time(NULL));
+
+    // 初始化棋盘
+    int num = 1;
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            puzzle[i][j] = num;
+            num++;
+        }
+    }
+
+    puzzle[4][4] = 0;
+    *empty_row = 4;
+    *empty_column = 4;
+
+    // 打乱棋盘
+    int count = 500;
+    for (int i = 0; i < count; i++) {
+        int neighbours[4][2] = { {*empty_row, *empty_column-1}, {*empty_row, *empty_column+1}, {*empty_row-1, *empty_column}, {*empty_row+1, *empty_column} };
+        int neighbours_can[4][2];
+        int neighbours_count = 0;
+
+        for (int j = 0; j < 4; j++) {
+            int row = neighbours[j][0], column = neighbours[j][1];
+            if (row >= 0 && row < 5 && column >= 0 && column < 5) {
+                neighbours_can[neighbours_count][0] = row;
+                neighbours_can[neighbours_count][1] = column;
+                neighbours_count++;
+            }
+        }
+
+        if (neighbours_count != 0) {
+            int rand_index = rand() % neighbours_count;
+            int chosen_row = neighbours_can[rand_index][0], chosen_column = neighbours_can[rand_index][1];
+
+            // 交换数字和空格位置
+            int temp = puzzle[chosen_row][chosen_column];
+            puzzle[chosen_row][chosen_column] = puzzle[*empty_row][*empty_column];
+            puzzle[*empty_row][*empty_column] = temp;
+
+            // 更新空格位置
+            *empty_row = chosen_row;
+            *empty_column = chosen_column;
         }
     }
 }

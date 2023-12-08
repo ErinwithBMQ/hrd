@@ -1,0 +1,260 @@
+
+M	cpp:S5028_"8Replace this macro by "const", "constexpr" or an "enum".(‚¹ÈÛ
+M	cpp:S5028`"8Replace this macro by "const", "constexpr" or an "enum".(º„è
+R	cpp:S5028b"8Replace this macro by "const", "constexpr" or an "enum".(½â›¬ûÿÿÿÿ
+R	cpp:S5028c"8Replace this macro by "const", "constexpr" or an "enum".(¸­«ûşÿÿÿÿ
+L	cpp:S5028d"8Replace this macro by "const", "constexpr" or an "enum".(…°ì?
+R	cpp:S5028e"8Replace this macro by "const", "constexpr" or an "enum".(Ë‹Úîşÿÿÿÿ
+R	cpp:S5028f"8Replace this macro by "const", "constexpr" or an "enum".(ôÕ¥Éûÿÿÿÿ
+R	cpp:S5028g"8Replace this macro by "const", "constexpr" or an "enum".(½ª¯ûÿÿÿÿ
+R	cpp:S5028h"8Replace this macro by "const", "constexpr" or an "enum".(Ğ‚ ³üÿÿÿÿ
+R	cpp:S5028i"8Replace this macro by "const", "constexpr" or an "enum".(—‚Êÿÿÿÿÿ
+M	cpp:S5028j"8Replace this macro by "const", "constexpr" or an "enum".(Æíõ—
+R	cpp:S5028k"8Replace this macro by "const", "constexpr" or an "enum".(¯¤Õóşÿÿÿÿ
+L	cpp:S1117"6declaration shadows a variable in the global namespace(°ò‹
+R	cpp:S5276°"<implicit conversion loses integer precision: 'int' to 'char'(êÙäå
+R	cpp:S5276™"<implicit conversion loses integer precision: 'int' to 'char'(êÙäå
+W	cpp:S5276è"<implicit conversion loses integer precision: 'int' to 'char'(õ´ªÁøÿÿÿÿ
+k	cpp:S5276Ê"Pimplicit conversion loses integer precision: 'time_t' (aka 'long long') to 'int'(®—¶ÿüÿÿÿÿ
+k	cpp:S5276Ä"Pimplicit conversion loses integer precision: 'time_t' (aka 'long long') to 'int'(õ ©©ÿÿÿÿÿ
+W	cpp:S5276ı"<implicit conversion loses integer precision: 'int' to 'char'(õ´ªÁøÿÿÿÿ
+k	cpp:S5276à"Pimplicit conversion loses integer precision: 'time_t' (aka 'long long') to 'int'(®—¶ÿüÿÿÿÿ
+k	cpp:S5276Û"Pimplicit conversion loses integer precision: 'time_t' (aka 'long long') to 'int'(õ ©©ÿÿÿÿÿ
+R	cpp:S5276š"<implicit conversion loses integer precision: 'int' to 'char'(êÙäå
+W	cpp:S5276­"<implicit conversion loses integer precision: 'int' to 'char'(õ´ªÁøÿÿÿÿ
+k	cpp:S5276"Pimplicit conversion loses integer precision: 'time_t' (aka 'long long') to 'int'(®—¶ÿüÿÿÿÿ
+k	cpp:S5276‰	"Pimplicit conversion loses integer precision: 'time_t' (aka 'long long') to 'int'(õ ©©ÿÿÿÿÿ
+S	cpp:S1117Â
+"6declaration shadows a variable in the global namespace(Ï¤°8¬âµÄÄ1
+v	cpp:S5276À
+"Yimplicit conversion loses integer precision: 'time_t' (aka 'long long') to 'unsigned int'(•ÛºÅ8Òã”ÄÄ1
+S	cpp:S1117î
+"6declaration shadows a variable in the global namespace(Ï¤°8ñÛÄÄÄ1
+v	cpp:S5276ë
+"Yimplicit conversion loses integer precision: 'time_t' (aka 'long long') to 'unsigned int'(•ÛºÅ8­âµÄÄ1
+/	cpp:S4962"Use the "nullptr" literal.(ŒÀˆ×
+/	cpp:S4962"Use the "nullptr" literal.(¹ƒò‚
+/	cpp:S4962"Use the "nullptr" literal.(¹ƒò‚
+/	cpp:S4962"Use the "nullptr" literal.(áó—ê
+/	cpp:S4962"Use the "nullptr" literal.(áó—ê
+/	cpp:S4962"Use the "nullptr" literal.(áˆùê
+/	cpp:S4962"Use the "nullptr" literal.(áˆùê
+I	cpp:S3628"4Convert this string literal to a raw string literal.(áˆùê
+/	cpp:S4962"Use the "nullptr" literal.(¯šˆ…
+/	cpp:S4962"Use the "nullptr" literal.(¯šˆ…
+4	cpp:S4962"Use the "nullptr" literal.(†Àúìùÿÿÿÿ
+4	cpp:S4962"Use the "nullptr" literal.(†Àúìùÿÿÿÿ
+4	cpp:S4962"Use the "nullptr" literal.(î¯«Ûùÿÿÿÿ
+4	cpp:S4962"Use the "nullptr" literal.(î¯«Ûùÿÿÿÿ
+/	cpp:S4962"Use the "nullptr" literal.(ßŞéÇ
+/	cpp:S4962"Use the "nullptr" literal.(ßŞéÇ
+I	cpp:S3628"4Convert this string literal to a raw string literal.(ßŞéÇ
+4	cpp:S4962 "Use the "nullptr" literal.(Â§œùÿÿÿÿ
+4	cpp:S4962 "Use the "nullptr" literal.(Â§œùÿÿÿÿ
+.	cpp:S4962%"Use the "nullptr" literal.(ı°´
+.	cpp:S4962%"Use the "nullptr" literal.(ı°´
+4	cpp:S4962&"Use the "nullptr" literal.(ˆçûÿÿÿÿÿ
+4	cpp:S4962&"Use the "nullptr" literal.(ˆçûÿÿÿÿÿ
+4	cpp:S4962("Use the "nullptr" literal.(íÔµÔÿÿÿÿÿ
+4	cpp:S4962("Use the "nullptr" literal.(íÔµÔÿÿÿÿÿ
+N	cpp:S3628("4Convert this string literal to a raw string literal.(íÔµÔÿÿÿÿÿ
+/	cpp:S4962)"Use the "nullptr" literal.(ãêÃ
+/	cpp:S4962)"Use the "nullptr" literal.(ãêÃ
+;	cpp:S5421m"!Global variables should be const.(†¬›Äûÿÿÿÿ
+U	cpp:S5416p";"using" should be preferred to "typedef" for type aliasing.(ÛÖ¤—ûÿÿÿÿ
+W	cpp:S5945x"=Use "std::array" or "std::vector" instead of a C-style array.(’²åÄøÿÿÿÿ
+;	cpp:S5421x"!Global variables should be const.(’²åÄøÿÿÿÿ
+E	cpp:S1659{"0Define each identifier in a dedicated statement.(Ç‹¹Ÿ
+P	cpp:S5416z";"using" should be preferred to "typedef" for type aliasing.(èñÅö
+6	cpp:S5421}"!Global variables should be const.(ÏÛÇÁ
+;	cpp:S5421~"!Global variables should be const.(“ñ“’ûÿÿÿÿ
+;	cpp:S5421"!Global variables should be const.(¾”³‡ùÿÿÿÿ
+7	cpp:S5421€"!Global variables should be const.(»¸Ö¥
+7	cpp:S5421"!Global variables should be const.(ğ«·ê
+<	cpp:S5421‚"!Global variables should be const.(úø¬Öşÿÿÿÿ
+<	cpp:S5421„"!Global variables should be const.(»Ö»Ñùÿÿÿÿ
+7	cpp:S5421…"!Global variables should be const.(íş›
+6	cpp:S5421†"!Global variables should be const.(ö¡¬v
+<	cpp:S5421‡"!Global variables should be const.(úòÇûÿÿÿÿ
+X	cpp:S5945"=Use "std::array" or "std::vector" instead of a C-style array.(…¥Î«úÿÿÿÿ
+X	cpp:S5945°"=Use "std::array" or "std::vector" instead of a C-style array.(£ÃëÓşÿÿÿÿ
+S	cpp:S5945Ç"=Use "std::array" or "std::vector" instead of a C-style array.(èÈ™È
+S	cpp:S5945É"=Use "std::array" or "std::vector" instead of a C-style array.(ğëÇß
+X	cpp:S5945Ğ"=Use "std::array" or "std::vector" instead of a C-style array.(úöËÿùÿÿÿÿ
+S	cpp:S5945Ò"=Use "std::array" or "std::vector" instead of a C-style array.(ºŒÌ–
+R	cpp:S5945Ø"=Use "std::array" or "std::vector" instead of a C-style array.(§¯•
+_	cpp:S5945Ù"=Use "std::array" or "std::vector" instead of a C-style array.(’•ğŞıÿÿÿÿ8ØãµÄÄ1
+gcpp:S134ş"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(‚ğ¶™şÿÿÿÿ
+I	cpp:S3562Œ".Add a "default" case to this switch statement.(á×Ëşÿÿÿÿ
+a	cpp:S1301ü"KReplace this "switch" statement by "if" statements to increase readability.(æŞ¶
+D	cpp:S3562ü".Add a "default" case to this switch statement.(æŞ¶
+j	cpp:S3776•"TRefactor this function to reduce its Cognitive Complexity from 45 to the 25 allowed.(öúÊÇ
+?	cpp:S5955¸")Declare the variable "i" inside the loop.(õ€Æ†
+S	cpp:S5271•"=function 'record' could be declared with attribute 'noreturn'(öúÊÇ
+gcpp:S134©"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(Ï¦Òÿÿÿÿÿ
+bcpp:S134»"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(“®‡
+gcpp:S134Ä"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(¿ ›Ìüÿÿÿÿ
+bcpp:S134Í"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(š¥êô
+bcpp:S134Ø"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(“®‡
+gcpp:S134á"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(¿ ›Ìüÿÿÿÿ
+bcpp:S134ê"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(š¥êô
+X	cpp:S5945–"=Use "std::array" or "std::vector" instead of a C-style array.(äİ¬èÿÿÿÿÿ
+M	cpp:S5945–"2Use "std::string" instead of a C-style char array.(äİ¬èÿÿÿÿÿ
+D	cpp:S5820›"/Convert this integer literal to a bool literal.(»î¥
+a	cpp:S1301¯"KReplace this "switch" statement by "if" statements to increase readability.(»­üø
+D	cpp:S3562¯".Add a "default" case to this switch statement.(»­üø
+a	cpp:S1301£"KReplace this "switch" statement by "if" statements to increase readability.(¸­°…
+D	cpp:S3562£".Add a "default" case to this switch statement.(¸­°…
+X	cpp:S5945€"=Use "std::array" or "std::vector" instead of a C-style array.(üÈ¥øÿÿÿÿÿ
+Z	cpp:S5945¢"=Use "std::array" or "std::vector" instead of a C-style array.(ÜÉ‹Ñ8×òÄÄ1
+M	cpp:S5945Ô"2Use "std::string" instead of a C-style char array.(¦»íıøÿÿÿÿ
+H	cpp:S5945à"2Use "std::string" instead of a C-style char array.(«ŸÎË
+X	cpp:S5945ğ"=Use "std::array" or "std::vector" instead of a C-style array.(£üÌïøÿÿÿÿ
+S	cpp:S5945‹"=Use "std::array" or "std::vector" instead of a C-style array.(Èõê
+M	cpp:S5945¥"2Use "std::string" instead of a C-style char array.(¦»íıøÿÿÿÿ
+M	cpp:S5945±"2Use "std::string" instead of a C-style char array.(©¾Ø¢ÿÿÿÿÿ
+j	cpp:S3776¾"TRefactor this function to reduce its Cognitive Complexity from 31 to the 25 allowed.(«Àæ
+bcpp:S134ï"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(™ıÚä
+bcpp:S134‚"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(™ıÚä
+bcpp:S134•"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(™ıÚä
+bcpp:S134¨"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(™ıÚä
+K	cpp:S1659Æ"0Define each identifier in a dedicated statement.(—®Üëùÿÿÿÿ
+X	cpp:S5945À"=Use "std::array" or "std::vector" instead of a C-style array.(–¦Ø”øÿÿÿÿ
+5	cpp:S4962Ê"Use the "nullptr" literal.(®—¶ÿüÿÿÿÿ
+E	cpp:S1659à"0Define each identifier in a dedicated statement.(»İi
+D	cpp:S3562ê".Add a "default" case to this switch statement.(¤•¼¡
+5	cpp:S4962Ä"Use the "nullptr" literal.(õ ©©ÿÿÿÿÿ
+o	cpp:S3776Ğ"TRefactor this function to reduce its Cognitive Complexity from 31 to the 25 allowed.(‹İÓ şÿÿÿÿ
+bcpp:S134„"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(™ıÚä
+bcpp:S134—"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(™ıÚä
+bcpp:S134ª"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(™ıÚä
+bcpp:S134½"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(™ıÚä
+M	cpp:S1659Ó"0Define each identifier in a dedicated statement.(øÊ÷²8ÆïÚÄÄ1
+K	cpp:S1659Û"0Define each identifier in a dedicated statement.(—®Üëùÿÿÿÿ
+X	cpp:S5945Ò"=Use "std::array" or "std::vector" instead of a C-style array.(£ôÕËıÿÿÿÿ
+5	cpp:S4962à"Use the "nullptr" literal.(®—¶ÿüÿÿÿÿ
+E	cpp:S1659õ"0Define each identifier in a dedicated statement.(»İi
+D	cpp:S3562ÿ".Add a "default" case to this switch statement.(¤•¼¡
+5	cpp:S4962Û"Use the "nullptr" literal.(õ ©©ÿÿÿÿÿ
+S	cpp:S5945ç"=Use "std::array" or "std::vector" instead of a C-style array.(ËËûµ
+S	cpp:S5945Œ"=Use "std::array" or "std::vector" instead of a C-style array.(ø»ŞØ
+M	cpp:S5945ã"2Use "std::string" instead of a C-style char array.(¦»íıøÿÿÿÿ
+H	cpp:S5945ï"2Use "std::string" instead of a C-style char array.(Àªì”
+j	cpp:S3776€"TRefactor this function to reduce its Cognitive Complexity from 31 to the 25 allowed.(—äï¾
+bcpp:S134´"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(™ıÚä
+bcpp:S134Ç"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(™ıÚä
+bcpp:S134Ú"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(™ıÚä
+bcpp:S134í"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(™ıÚä
+M	cpp:S1659ƒ"0Define each identifier in a dedicated statement.(øÊ÷²8¦ÜÄÄ1
+K	cpp:S1659Š"0Define each identifier in a dedicated statement.(—®Üëùÿÿÿÿ
+X	cpp:S5945‚"=Use "std::array" or "std::vector" instead of a C-style array.(ÈıÁ·ÿÿÿÿÿ
+5	cpp:S4962"Use the "nullptr" literal.(®—¶ÿüÿÿÿÿ
+E	cpp:S1659¥"0Define each identifier in a dedicated statement.(»İi
+K	cpp:S3562¯".Add a "default" case to this switch statement.(¤•¼¡8ƒ¡ÄÄ1
+5	cpp:S4962‰	"Use the "nullptr" literal.(õ ©©ÿÿÿÿÿ
+acpp:S134¯	"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(é²Á9
+P	cpp:S3562»	".Add a "default" case to this switch statement.(á×Ëşÿÿÿÿ8ƒ¡ÄÄ1
+0	cpp:S4962˜	"Use the "nullptr" literal.(æËĞı
+0	cpp:S4962˜	"Use the "nullptr" literal.(æËĞı
+0	cpp:S4962™	"Use the "nullptr" literal.(€¿á‹
+0	cpp:S4962™	"Use the "nullptr" literal.(€¿á‹
+a	cpp:S1301­	"KReplace this "switch" statement by "if" statements to increase readability.(æŞ¶
+K	cpp:S3562­	".Add a "default" case to this switch statement.(æŞ¶8äŞ¦ÄÄ1
+]	cpp:S5271ß	"Bfunction 'Paintendyes' could be declared with attribute 'noreturn'(‡ô”–ùÿÿÿÿ
+gcpp:S134‚
+"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(Í² ­üÿÿÿÿ
+H	cpp:S5945à	"2Use "std::string" instead of a C-style char array.(—â×š
+5	cpp:S4962ä	"Use the "nullptr" literal.(†±ŸÍüÿÿÿÿ
+5	cpp:S4962ä	"Use the "nullptr" literal.(†±ŸÍüÿÿÿÿ
+D	cpp:S5820ô	"/Convert this integer literal to a bool literal.(»î¥
+f	cpp:S1301ˆ
+"KReplace this "switch" statement by "if" statements to increase readability.(È¯üÂüÿÿÿÿ
+P	cpp:S3562ˆ
+".Add a "default" case to this switch statement.(È¯üÂüÿÿÿÿ8©ï§ÄÄ1
+h	cpp:S1301ü	"KReplace this "switch" statement by "if" statements to increase readability.(¸­°…8ƒ¡ÄÄ1
+K	cpp:S3562ü	".Add a "default" case to this switch statement.(¸­°…8»à¼ÄÄ1
+\	cpp:S5271
+"Afunction 'Paintendno' could be declared with attribute 'noreturn'(ƒÎşÿÿÿÿ
+gcpp:S134³
+"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(Í² ­üÿÿÿÿ
+H	cpp:S5945‘
+"2Use "std::string" instead of a C-style char array.(—â×š
+5	cpp:S4962•
+"Use the "nullptr" literal.(†±ŸÍüÿÿÿÿ
+5	cpp:S4962•
+"Use the "nullptr" literal.(†±ŸÍüÿÿÿÿ
+D	cpp:S5820¥
+"/Convert this integer literal to a bool literal.(»î¥
+m	cpp:S1301¸
+"KReplace this "switch" statement by "if" statements to increase readability.(È¯üÂüÿÿÿÿ8äŞ¦ÄÄ1
+P	cpp:S3562¸
+".Add a "default" case to this switch statement.(È¯üÂüÿÿÿÿ8ùˆ¾ÄÄ1
+h	cpp:S1301­
+"KReplace this "switch" statement by "if" statements to increase readability.(¸­°…8ùˆ¾ÄÄ1
+K	cpp:S3562­
+".Add a "default" case to this switch statement.(¸­°…8ùˆ¾ÄÄ1
+Y	cpp:S5945¿
+"=Use "std::array" or "std::vector" instead of a C-style array.(¡Î{8ıû•ÄÄ1
+M	cpp:S5020À
+"0Replace "srand" with the facilities in <random>.(•ÛºÅ8‰Ã“ÄÄ1
+7	cpp:S4962À
+"Use the "nullptr" literal.(•ÛºÅ8‹Ã“ÄÄ1
+`	cpp:S5566Ä
+"CChange this raw for-loop to a range for-loop or an "std::for_each".(Üî€¹8ıû•ÄÄ1
+`	cpp:S5566Ó
+"CChange this raw for-loop to a range for-loop or an "std::for_each".(Üî€¹8ÚãµÄÄ1
+Z	cpp:S5945Ğ
+"=Use "std::array" or "std::vector" instead of a C-style array.(×ºı¾8‹Ã“ÄÄ1
+Z	cpp:S5945Ñ
+"=Use "std::array" or "std::vector" instead of a C-style array.(»Ç¾Á8ÚãµÄÄ1
+M	cpp:S1659Ô
+"0Define each identifier in a dedicated statement.(·ºæî8‹Ã“ÄÄ1
+R	cpp:S1659Ş
+"0Define each identifier in a dedicated statement.(ñ‘âÈşÿÿÿÿ8ÚãµÄÄ1
+L	cpp:S5020İ
+"/Replace "rand" with the facilities in <random>.(¦°”×8ŒÃ“ÄÄ1
+Z	cpp:S5945ê
+"=Use "std::array" or "std::vector" instead of a C-style array.(ëÖ¤8”•¸ÄÄ1
+M	cpp:S5020ë
+"0Replace "srand" with the facilities in <random>.(•ÛºÅ8ÙãµÄÄ1
+7	cpp:S4962ë
+"Use the "nullptr" literal.(•ÛºÅ8ÚãµÄÄ1
+`	cpp:S5566ğ
+"CChange this raw for-loop to a range for-loop or an "std::for_each".(¦Õıú8™•¸ÄÄ1
+`	cpp:S5566"CChange this raw for-loop to a range for-loop or an "std::for_each".(Üî€¹8¼İÄÄÄ1
+Z	cpp:S5945ı
+"=Use "std::array" or "std::vector" instead of a C-style array.(×ºı¾8ÚãµÄÄ1
+Z	cpp:S5945ş
+"=Use "std::array" or "std::vector" instead of a C-style array.(»Ç¾Á8—ƒæÄÄ1
+M	cpp:S1659‚"0Define each identifier in a dedicated statement.(·ºæî8ÚãµÄÄ1
+R	cpp:S1659Œ"0Define each identifier in a dedicated statement.(ñ‘âÈşÿÿÿÿ8˜ƒæÄÄ1
+L	cpp:S5020‹"/Replace "rand" with the facilities in <random>.(¦°”×8ÚãµÄÄ1
+9	cpp:S1854ú"#Value stored to 'row' is never read(‘Øü†
+9	cpp:S1854û"#Value stored to 'col' is never read(ÃóøŠ
+9	cpp:S1854"#Value stored to 'row' is never read(‘Øü†
+9	cpp:S1854"#Value stored to 'col' is never read(ÃóøŠ
+9	cpp:S1854 "#Value stored to 'row' is never read(‘Øü†
+9	cpp:S1854¡"#Value stored to 'col' is never read(ÃóøŠ
+9	cpp:S1854³"#Value stored to 'row' is never read(‘Øü†
+9	cpp:S1854´"#Value stored to 'col' is never read(ÃóøŠ
+@	cpp:S1854"#Value stored to 'row' is never read(‘Øü†8ĞÓ¡ÄÄ1
+@	cpp:S1854"#Value stored to 'col' is never read(ÃóøŠ8ĞÓ¡ÄÄ1
+@	cpp:S1854¢"#Value stored to 'row' is never read(‘Øü†8ĞÓ¡ÄÄ1
+@	cpp:S1854£"#Value stored to 'col' is never read(ÃóøŠ8ĞÓ¡ÄÄ1
+@	cpp:S1854µ"#Value stored to 'row' is never read(‘Øü†8ĞÓ¡ÄÄ1
+@	cpp:S1854¶"#Value stored to 'col' is never read(ÃóøŠ8ĞÓ¡ÄÄ1
+@	cpp:S1854È"#Value stored to 'row' is never read(‘Øü†8ĞÓ¡ÄÄ1
+@	cpp:S1854É"#Value stored to 'col' is never read(ÃóøŠ8ĞÓ¡ÄÄ1
+@	cpp:S1854¿"#Value stored to 'row' is never read(‘Øü†8‘×¾ÄÄ1
+@	cpp:S1854À"#Value stored to 'col' is never read(ÃóøŠ8‘×¾ÄÄ1
+@	cpp:S1854Ò"#Value stored to 'row' is never read(‘Øü†8‘×¾ÄÄ1
+@	cpp:S1854Ó"#Value stored to 'col' is never read(ÃóøŠ8‘×¾ÄÄ1
+@	cpp:S1854å"#Value stored to 'row' is never read(‘Øü†8‘×¾ÄÄ1
+@	cpp:S1854æ"#Value stored to 'col' is never read(ÃóøŠ8‘×¾ÄÄ1
+@	cpp:S1854ø"#Value stored to 'row' is never read(‘Øü†8‘×¾ÄÄ1
+@	cpp:S1854ù"#Value stored to 'col' is never read(ÃóøŠ8‘×¾ÄÄ1
+3cpp:S125¨"Remove the commented out code.(»ØÖù
+:cpp:S125
+"Remove the commented out code.(»ØÖù8­›½ÄÄ1
+:cpp:S125²
+"Remove the commented out code.(»ØÖù8­›½ÄÄ1
