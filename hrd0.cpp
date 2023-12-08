@@ -9,87 +9,19 @@
 #pragma comment(lib,"winmm.lib")//处理接口
 
 //下面是播放背景音乐的函数
-void BGM()
-{
-    PlaySound("D:\\hrd\\music\\a.wav", NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
-}
-
-void BGM_buttom()
-{
-    mciSendStringW(L"stop mymusic1", 0, 0, 0); // 停止上一次的播放
-    mciSendStringW(L"close mymusic1", 0, 0, 0); // 关闭上一次的文件
-
-    mciSendStringW(L"open D:\\\\hrd\\\\music\\\\buttom.wav alias mymusic1", 0, 0, 0);
-    mciSendStringW(L"play mymusic1", 0, 0, 0);
-}
-
-void BGM_win()
-{
-    mciSendStringW(L"stop mymusic2", 0, 0, 0); // 停止上一次的播放
-    mciSendStringW(L"close mymusic2", 0, 0, 0); // 关闭上一次的文件
-
-    mciSendStringW(L"open D:\\\\hrd\\\\music\\\\win.wav alias mymusic2", 0, 0, 0);
-    mciSendStringW(L"play mymusic2", 0, 0, 0);
-}
-
-void BGM_lose()
-{
-    mciSendStringW(L"stop mymusic3", 0, 0, 0); // 停止上一次的播放
-    mciSendStringW(L"close mymusic3", 0, 0, 0); // 关闭上一次的文件
-
-    mciSendStringW(L"open D:\\\\hrd\\\\music\\\\lose.wav alias mymusic3", 0, 0, 0);
-    mciSendStringW(L"play mymusic3", 0, 0, 0);
-}
+void BGM();
+void BGM_buttom();
+void BGM_win();
+void BGM_lose();
 
 //加载图片函数
-void photo_zhuye()
-{
-    IMAGE mage;
-    loadimage(&mage, "back.jpg");
-    putimage(0, 0, &mage);
-}
-
-void photo_youxi3()
-{
-    IMAGE mage;
-    loadimage(&mage, "back2.jpg");
-    putimage(0, 0, &mage);
-}
-
-void photo_youxi4()
-{
-    IMAGE mage;
-    loadimage(&mage, "back3.jpg");
-    putimage(0, 0, &mage);
-}
-
-void photo_youxi5()
-{
-    IMAGE mage;
-    loadimage(&mage, "back4.jpg");
-    putimage(0, 0, &mage);
-}
-
-void photo_youxi_win()
-{
-    IMAGE mage;
-    loadimage(&mage, "back6.jpg");
-    putimage(0, 0, &mage);
-}
-
-void photo_youxi_lose()
-{
-    IMAGE mage;
-    loadimage(&mage, "back5.jpg");
-    putimage(0, 0, &mage);
-}
-
-void photo_youxi_record()
-{
-    IMAGE mage;
-    loadimage(&mage, "back7.jpg");
-    putimage(0, 0, &mage);
-}
+void photo_zhuye();
+void photo_youxi3();
+void photo_youxi4();
+void photo_youxi5();
+void photo_youxi_win();
+void photo_youxi_lose();
+void photo_youxi_record();
 
 //按钮位置确定
 #define win_width 600
@@ -1429,4 +1361,87 @@ void suiji_5(int puzzle[][5], int *empty_row, int *empty_column) {
             *empty_column = chosen_column;
         }
     }
+}
+
+//下面是播放背景音乐的函数
+void BGM()
+{
+    PlaySound("D:\\hrd\\music\\a.wav", NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
+}
+
+void BGM_buttom()
+{
+    mciSendStringW(L"stop mymusic1", 0, 0, 0); // 停止上一次的播放
+    mciSendStringW(L"close mymusic1", 0, 0, 0); // 关闭上一次的文件
+
+    mciSendStringW(L"open D:\\\\hrd\\\\music\\\\buttom.wav alias mymusic1", 0, 0, 0);
+    mciSendStringW(L"play mymusic1", 0, 0, 0);
+}
+
+void BGM_win()
+{
+    mciSendStringW(L"stop mymusic2", 0, 0, 0); // 停止上一次的播放
+    mciSendStringW(L"close mymusic2", 0, 0, 0); // 关闭上一次的文件
+
+    mciSendStringW(L"open D:\\\\hrd\\\\music\\\\win.wav alias mymusic2", 0, 0, 0);
+    mciSendStringW(L"play mymusic2", 0, 0, 0);
+}
+
+void BGM_lose()
+{
+    mciSendStringW(L"stop mymusic3", 0, 0, 0); // 停止上一次的播放
+    mciSendStringW(L"close mymusic3", 0, 0, 0); // 关闭上一次的文件
+
+    mciSendStringW(L"open D:\\\\hrd\\\\music\\\\lose.wav alias mymusic3", 0, 0, 0);
+    mciSendStringW(L"play mymusic3", 0, 0, 0);
+}
+
+//加载图片函数
+void photo_zhuye()
+{
+    IMAGE mage;
+    loadimage(&mage, "back.jpg");
+    putimage(0, 0, &mage);
+}
+
+void photo_youxi3()
+{
+    IMAGE mage;
+    loadimage(&mage, "back2.jpg");
+    putimage(0, 0, &mage);
+}
+
+void photo_youxi4()
+{
+    IMAGE mage;
+    loadimage(&mage, "back3.jpg");
+    putimage(0, 0, &mage);
+}
+
+void photo_youxi5()
+{
+    IMAGE mage;
+    loadimage(&mage, "back4.jpg");
+    putimage(0, 0, &mage);
+}
+
+void photo_youxi_win()
+{
+    IMAGE mage;
+    loadimage(&mage, "back6.jpg");
+    putimage(0, 0, &mage);
+}
+
+void photo_youxi_lose()
+{
+    IMAGE mage;
+    loadimage(&mage, "back5.jpg");
+    putimage(0, 0, &mage);
+}
+
+void photo_youxi_record()
+{
+    IMAGE mage;
+    loadimage(&mage, "back7.jpg");
+    putimage(0, 0, &mage);
 }
