@@ -1,11 +1,11 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-#include<graphics.h>
-#include<stdio.h>
-#include <stdbool.h>
-#include <conio.h>
-#include <stdlib.h>
-#include<time.h>
-#include <mmsystem.h>
+#include<graphics.h>     //图形库
+#include<stdio.h>        //标准输入输出库
+#include <stdbool.h>     //布尔类型库
+#include <conio.h>       //控制台输入输出库
+#include <stdlib.h>      //系统函数库
+#include<time.h>         //处理时间库
+#include <mmsystem.h>    //音乐处理库
 #pragma comment(lib,"winmm.lib")//处理接口
 
 //下面是播放背景音乐的函数
@@ -51,9 +51,11 @@ typedef struct finalrecord_grade {
 
 DATA finalrecord[10] = { };
 
+//按钮
 typedef struct q {
     int x1, y1, width, length;
 } BUTTON;
+
 BUTTON begin = { but_x,but_y0,but_wid,but_len };
 BUTTON records = { but_x,but_y1,but_wid,but_len };
 BUTTON logout = { but_x,but_y2,but_wid,but_len };
@@ -67,14 +69,14 @@ RECT e = { but_x,but_y2,but_x + but_wid,but_y2 + but_len };
 RECT t = { title_x1,title_y1,title_x2,title_y2 };
 
 //绘制页面函数
-void beginning();
-void record();
-void choose3();
-void choose4();
-void choose5();
-void Paintendyes();
-void Paintendno();
-void chushi();
+void beginning();       //难度选择页面
+void record();          //游戏记录页面
+void choose3();         //3*3棋盘
+void choose4();         //4*4棋盘
+void choose5();         //5*5棋盘
+void Paintendyes();     //游戏胜利页面
+void Paintendno();      //游戏失败页面
+void chushi();          //游戏初始页面
 
 void drawbutton(BUTTON btn);  //绘制按钮函数
 
