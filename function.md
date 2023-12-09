@@ -15,7 +15,7 @@ target_link_libraries(hrd0 winmm)
 ```
 *使用Clion编译本程序时cmakelists里必须要加最后一行，不然音乐处理函数将无法正常编译。（应该是Clion编译器与VS编译器的区别）*
 
-## 库的引用
+## 库的调用
 ```c
 #include<graphics.h>     //图形库
 #include<stdio.h>        //标准输入输出库
@@ -166,4 +166,49 @@ int fileinput()
 
     return 0;
 }
+```
+
+## 数据结构与按钮构成
+```c
+//按钮位置确定
+#define win_width 600
+#define win_length 800
+
+#define but_x 225
+#define but_y0 270
+#define but_y1 350
+#define but_y2 430
+#define but_wid 150
+#define but_len 60
+#define title_x1 175
+#define title_y1 20
+#define title_x2 425
+#define title_y2 190
+
+//存储结构
+typedef struct finalrecord_grade {
+    int n;
+    int choice=0;
+    int count;
+    int timeused;
+    int judge = 0;
+}DATA;
+
+DATA finalrecord[10] = { };
+
+//按钮
+typedef struct q {
+    int x1, y1, width, length;
+} BUTTON;
+BUTTON begin = { but_x,but_y0,but_wid,but_len };
+BUTTON records = { but_x,but_y1,but_wid,but_len };
+BUTTON logout = { but_x,but_y2,but_wid,but_len };
+BUTTON choose33 = { but_x,but_y0,but_wid,but_len };
+BUTTON choose44 = { but_x,but_y1,but_wid,but_len };
+BUTTON choose55 = { but_x,but_y2,but_wid,but_len };
+
+RECT b = { but_x,but_y0,but_x + but_wid,but_y0 + but_len };
+RECT r = { but_x,but_y1,but_x + but_wid,but_y1 + but_len };
+RECT e = { but_x,but_y2,but_x + but_wid,but_y2 + but_len };
+RECT t = { title_x1,title_y1,title_x2,title_y2 };
 ```
