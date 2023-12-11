@@ -133,7 +133,7 @@ void photo_youxi_lose();
 void photo_youxi_record();
 
 //绘制按钮函数
-void drawbutton(BUTTON btn);
+void photo_zhuye_button();
 ```
 ## 游戏记录处理函数
 ```c
