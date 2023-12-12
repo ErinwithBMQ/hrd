@@ -1293,8 +1293,8 @@ void suiji_4(int puzzle[][4], int *empty_row, int *empty_column) {
     *empty_row = 3;
     *empty_column = 3;
 
-    int count = 400;
-    for (int i=0; i<count; i++) {
+    int count = 400;  //打乱次数。可修改
+    for (int i=0; i < count; i++) {
         // 随机选择相邻的一个位置进行交换
         int neighbours[4][2] = { {*empty_row, *empty_column-1}, {*empty_row, *empty_column+1}, {*empty_row-1, *empty_column}, {*empty_row+1, *empty_column} };
         int neighbours_can[4][2];
@@ -1339,7 +1339,7 @@ void suiji_5(int puzzle[][5], int *empty_row, int *empty_column) {
     *empty_column = 4;
 
     // 打乱棋盘
-    int count = 500;
+    int count = 500; //打乱次数。可修改
     for (int i = 0; i < count; i++) {
         int neighbours[4][2] = { {*empty_row, *empty_column-1}, {*empty_row, *empty_column+1}, {*empty_row-1, *empty_column}, {*empty_row+1, *empty_column} };
         int neighbours_can[4][2];
