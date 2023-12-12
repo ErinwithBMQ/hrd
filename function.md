@@ -94,7 +94,21 @@ void Paintcount5(int n);
 void Paintline5();
 
 //4*4 5*5棋盘随机打乱函数
+
+/**
+ * 随机打乱4*4棋盘，同时改变当时空格行与当时空格列
+ * @param puzzle 4*4棋盘
+ * @param empty_row 当前空格行指针
+ * @param empty_column 当前空格列指针
+ */
 void suiji_4(int puzzle[][4], int *empty_row, int *empty_column);
+
+/**
+ * 随机打乱5*5棋盘，同时改变当时空格行与当时空格列
+ * @param puzzle 5*5棋盘
+ * @param empty_row 当前空格行指针
+ * @param empty_column 当前空格列指针
+ */
 void suiji_5(int puzzle[][5], int *empty_row, int *empty_column);
 ```
 *为什么会没有3×3棋盘打乱函数？因为如果打乱了我们后面现场可能就拼不出来了。*

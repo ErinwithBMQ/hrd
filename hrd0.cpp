@@ -78,6 +78,7 @@ void Paintendyes();     //游戏胜利页面
 void Paintendno();      //游戏失败页面
 void chushi();          //游戏初始页面
 
+//主页按钮加载
 void photo_zhuye_button();
 
 int fileinput();  //游戏记录处理函数
@@ -147,21 +148,35 @@ void Paintcount5(int n);
 void Paintline5();
 
 //4*4 5*5棋盘随机打乱函数
+
+/**
+ * 随机打乱4*4棋盘，同时改变当时空格行与当时空格列
+ * @param puzzle 4*4棋盘
+ * @param empty_row 当前空格行指针
+ * @param empty_column 当前空格列指针
+ */
 void suiji_4(int puzzle[][4], int *empty_row, int *empty_column);
+
+/**
+ * 随机打乱5*5棋盘，同时改变当时空格行与当时空格列
+ * @param puzzle 5*5棋盘
+ * @param empty_row 当前空格行指针
+ * @param empty_column 当前空格列指针
+ */
 void suiji_5(int puzzle[][5], int *empty_row, int *empty_column);
 
-int main() {
-    initgraph(win_width, win_length);
-    setbkcolor(WHITE);
 
-    chushi();
+int main() {
+    initgraph(win_width, win_length); //加载页面
+    setbkcolor(WHITE);
+    chushi();  //加载初始页面
     _getch();
     return 0;
-
 }
 
 
-void beginning() {                                                                        //绘制游戏界面
+//难度选择页面
+void beginning() {
     cleardevice();
     photo_zhuye();
     setbkmode(TRANSPARENT);
@@ -202,8 +217,10 @@ void beginning() {                                                              
     _getch();
     closegraph();
 }
+
+//绘制历史记录的界面
 void record() {
-    char a[10][100] = { };                                  //绘制历史记录的界面
+    char a[10][100] = { };
     int i;
     setbkcolor(WHITE);
     cleardevice();
@@ -301,13 +318,9 @@ void record() {
 
         }
     }
-
     _getch();
-
-
-
-
 }
+
 
 bool is_well(int pan[][4]) {
     for (int i = 0; i < 4; ++i) {
@@ -339,7 +352,6 @@ bool if_tran(int row, int col) {
     if (row > 3 || col > 3 || row < 0 || col < 0) {
         return false;
     }
-
     return true;
 }
 
