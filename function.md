@@ -36,7 +36,7 @@ target_link_libraries(hrd0 winmm)
  * @param pan 棋盘的二维数组
  * @return true：已拼好；false：未拼好
  */
-bool is_well(int pan[][4]);
+bool is_well4(int pan[][4]);
 
 /**
  * 检测上下左右操作是否合法
@@ -44,7 +44,7 @@ bool is_well(int pan[][4]);
  * @param col 空位即将出现的列
  * @return 返回true为合法，false为不合法
  */
-bool if_tran(int row, int col);
+bool if_tran4(int row, int col);
 
 /**
  * 将棋盘对应位置换位
@@ -54,7 +54,7 @@ bool if_tran(int row, int col);
  * @param col_n 空位现在所在列
  * @param pan 棋盘对应的二维数组
  */
-void tran_pan(int row, int col, int row_n, int col_n, int pan[][4]);
+void tran_pan4(int row, int col, int row_n, int col_n, int pan[][4]);
 
 /**
  * 画出棋盘
@@ -62,38 +62,44 @@ void tran_pan(int row, int col, int row_n, int col_n, int pan[][4]);
  * @param x 行
  * @param y 列
  */
-void Paintshu(int n, int x, int y);
+void paint_shu4(int n, int x, int y);
 
 /**
  * 显示步数
  * @param n 步数
  */
-void Paintcount(int n);
+void paint_count4(int n);
 
 /**
  * 画线
  */
-void Paintline();
+void paint_line4();
 
 
 //以下是处理3*3棋盘的函数.效果基本同上
 bool is_well3(int pan[][3]);
 bool if_tran3(int row, int col);
 void tran_pan3(int row, int col, int row_n, int col_n, int pan[][3]);
-void Paintshu3(int n, int x, int y);
-void Paintcount3(int n);
-void Paintline3();
+void paint_shu3(int n, int x, int y);
+void paint_count3(int n);
+void paint_line3();
 
 
 //以下是处理5*5棋盘的函数.效果基本同上
 bool is_well5(int pan[][5]);
 bool if_tran5(int row, int col);
 void tran_pan5(int row, int col, int row_n, int col_n, int pan[][5]);
-void Paintshu5(int n, int x, int y);
-void Paintcount5(int n);
-void Paintline5();
+void paint_shu5(int n, int x, int y);
+void paint_count5(int n);
+void paint_line5();
 
-//4*4 5*5棋盘随机打乱函数
+/**
+ * 随机打乱3*3棋盘，同时改变当时空格行与当时空格列
+ * @param puzzle 3*3棋盘
+ * @param empty_row 当前空格行指针
+ * @param empty_column 当前空格列指针
+ */
+void suiji_3(int puzzle[][3], int *empty_row, int *empty_column);
 
 /**
  * 随机打乱4*4棋盘，同时改变当时空格行与当时空格列
@@ -111,7 +117,6 @@ void suiji_4(int puzzle[][4], int *empty_row, int *empty_column);
  */
 void suiji_5(int puzzle[][5], int *empty_row, int *empty_column);
 ```
-*为什么会没有3×3棋盘打乱函数？因为如果打乱了我们后面现场可能就拼不出来了。*
 
 函数具体内容请见源程序。
 
@@ -124,8 +129,8 @@ void record();          //游戏记录页面
 void choose3();         //3*3棋盘
 void choose4();         //4*4棋盘
 void choose5();         //5*5棋盘
-void Paintendyes();     //游戏胜利页面
-void Paintendno();      //游戏失败页面
+void paintend_yes();     //游戏胜利页面
+void paintend_no();      //游戏失败页面
 void chushi();          //游戏初始页面
 ```
 

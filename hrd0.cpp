@@ -74,8 +74,8 @@ void record();          //ÓÎÏ·¼ÇÂ¼Ò³Ãæ
 void choose3();         //3*3ÆåÅÌ
 void choose4();         //4*4ÆåÅÌ
 void choose5();         //5*5ÆåÅÌ
-void Paintendyes();     //ÓÎÏ·Ê¤ÀûÒ³Ãæ
-void Paintendno();      //ÓÎÏ·Ê§°ÜÒ³Ãæ
+void paintend_yes();     //ÓÎÏ·Ê¤ÀûÒ³Ãæ
+void paintend_no();      //ÓÎÏ·Ê§°ÜÒ³Ãæ
 void chushi();          //ÓÎÏ·³õÊ¼Ò³Ãæ
 
 //Ö÷Ò³°´Å¥¼ÓÔØ
@@ -90,7 +90,7 @@ int fileinput();  //ÓÎÏ·¼ÇÂ¼´¦Àíº¯Êı
  * @param pan ÆåÅÌµÄ¶şÎ¬Êı×é
  * @return true£ºÒÑÆ´ºÃ£»false£ºÎ´Æ´ºÃ
  */
-bool is_well(int pan[][4]);
+bool is_well4(int pan[][4]);
 
 /**
  * ¼ì²âÉÏÏÂ×óÓÒ²Ù×÷ÊÇ·ñºÏ·¨
@@ -98,7 +98,7 @@ bool is_well(int pan[][4]);
  * @param col ¿ÕÎ»¼´½«³öÏÖµÄÁĞ
  * @return ·µ»ØtrueÎªºÏ·¨£¬falseÎª²»ºÏ·¨
  */
-bool if_tran(int row, int col);
+bool if_tran4(int row, int col);
 
 /**
  * ½«ÆåÅÌ¶ÔÓ¦Î»ÖÃ»»Î»
@@ -108,7 +108,7 @@ bool if_tran(int row, int col);
  * @param col_n ¿ÕÎ»ÏÖÔÚËùÔÚÁĞ
  * @param pan ÆåÅÌ¶ÔÓ¦µÄ¶şÎ¬Êı×é
  */
-void tran_pan(int row, int col, int row_n, int col_n, int pan[][4]);
+void tran_pan4(int row, int col, int row_n, int col_n, int pan[][4]);
 
 /**
  * »­³öÆåÅÌ
@@ -116,38 +116,44 @@ void tran_pan(int row, int col, int row_n, int col_n, int pan[][4]);
  * @param x ĞĞ
  * @param y ÁĞ
  */
-void Paintshu(int n, int x, int y);
+void paint_shu4(int n, int x, int y);
 
 /**
  * ÏÔÊ¾²½Êı
  * @param n ²½Êı
  */
-void Paintcount(int n);
+void paint_count4(int n);
 
 /**
  * »­Ïß
  */
-void Paintline();
+void paint_line4();
 
 
 //ÒÔÏÂÊÇ´¦Àí3*3ÆåÅÌµÄº¯Êı.Ğ§¹û»ù±¾Í¬ÉÏ
 bool is_well3(int pan[][3]);
 bool if_tran3(int row, int col);
 void tran_pan3(int row, int col, int row_n, int col_n, int pan[][3]);
-void Paintshu3(int n, int x, int y);
-void Paintcount3(int n);
-void Paintline3();
+void paint_shu3(int n, int x, int y);
+void paint_count3(int n);
+void paint_line3();
 
 
 //ÒÔÏÂÊÇ´¦Àí5*5ÆåÅÌµÄº¯Êı.Ğ§¹û»ù±¾Í¬ÉÏ
 bool is_well5(int pan[][5]);
 bool if_tran5(int row, int col);
 void tran_pan5(int row, int col, int row_n, int col_n, int pan[][5]);
-void Paintshu5(int n, int x, int y);
-void Paintcount5(int n);
-void Paintline5();
+void paint_shu5(int n, int x, int y);
+void paint_count5(int n);
+void paint_line5();
 
-//4*4 5*5ÆåÅÌËæ»ú´òÂÒº¯Êı
+/**
+ * Ëæ»ú´òÂÒ3*3ÆåÅÌ£¬Í¬Ê±¸Ä±äµ±Ê±¿Õ¸ñĞĞÓëµ±Ê±¿Õ¸ñÁĞ
+ * @param puzzle 3*3ÆåÅÌ
+ * @param empty_row µ±Ç°¿Õ¸ñĞĞÖ¸Õë
+ * @param empty_column µ±Ç°¿Õ¸ñÁĞÖ¸Õë
+ */
+void suiji_3(int puzzle[][3], int *empty_row, int *empty_column);
 
 /**
  * Ëæ»ú´òÂÒ4*4ÆåÅÌ£¬Í¬Ê±¸Ä±äµ±Ê±¿Õ¸ñĞĞÓëµ±Ê±¿Õ¸ñÁĞ
@@ -322,7 +328,7 @@ void record() {
 }
 
 
-bool is_well(int pan[][4]) {
+bool is_well4(int pan[][4]) {
     for (int i = 0; i < 4; ++i) {
         if (pan[0][i] != i + 1) {
             return false;
@@ -348,18 +354,18 @@ bool is_well(int pan[][4]) {
 
 
 
-bool if_tran(int row, int col) {
+bool if_tran4(int row, int col) {
     if (row > 3 || col > 3 || row < 0 || col < 0) {
         return false;
     }
     return true;
 }
 
-void tran_pan(int row, int col, int row_n, int col_n, int pan[][4]) {
+void tran_pan4(int row, int col, int row_n, int col_n, int pan[][4]) {
     pan[row_n][col_n] = pan[row][col];
     pan[row][col] = 0;
 }
-void Paintshu(int n, int x, int y)
+void paint_shu4(int n, int x, int y)
 {
     settextcolor(BLACK);
     settextstyle(90, 0, "»ªÎÄÖĞËÎ");
@@ -398,7 +404,7 @@ void Paintshu(int n, int x, int y)
     }
 }
 
-void Paintcount(int n)
+void paint_count4(int n)
 {
     settextcolor(BLACK);
     settextstyle(50, 0, "»ªÎÄÖĞËÎ");
@@ -411,7 +417,7 @@ void Paintcount(int n)
     outtextxy(350, 700, a);
 }
 
-void Paintline() {
+void paint_line4() {
     settextcolor(BLACK);
     settextstyle(100, 0, "»ªÎÄÖĞËÎ");
     setcolor(BLUE);
@@ -465,7 +471,7 @@ void tran_pan3(int row, int col, int row_n, int col_n, int pan[][3]) {
     pan[row][col] = 0;
 }
 
-void Paintshu3(int n, int x, int y)
+void paint_shu3(int n, int x, int y)
 {
     settextcolor(BLACK);
     settextstyle(90, 0, "»ªÎÄÖĞËÎ");
@@ -479,7 +485,7 @@ void Paintshu3(int n, int x, int y)
     }
 }
 
-void Paintcount3(int n)
+void paint_count3(int n)
 {
     settextcolor(BLACK);
     settextstyle(50, 0, "»ªÎÄÖĞËÎ");
@@ -492,7 +498,7 @@ void Paintcount3(int n)
     outtextxy(350, 700, a);
 }
 
-void Paintline3() {
+void paint_line3() {
     settextcolor(BLACK);
     settextstyle(100, 0, "»ªÎÄÖĞËÎ");
     setcolor(BLUE);
@@ -513,11 +519,12 @@ void Paintline3() {
 
 void choose3() //3*3ÆåÅÌ
 {
-    int hua3[3][3] = { {1,2,3},
-                      {4,8,5},
-                      {7,6,0} };
-    int row_n = 2;
-    int col_n = 2;
+    int hua3[3][3] = {0};
+    int row_n, col_n;
+    int *empty_row = &row_n;
+    int *empty_col = &col_n;
+
+    suiji_3(hua3,empty_row,empty_col);
     int count = 0;
     int time1, time2, timeused;
     setbkcolor(WHITE);
@@ -530,15 +537,15 @@ void choose3() //3*3ÆåÅÌ
         cleardevice();
         BeginBatchDraw(); //¿ªÊ¼ÅúÁ¿»æÍ¼
         photo_youxi3();
-        Paintline3();
+        paint_line3();
 
-        Paintcount3(count); //ÏÔÊ¾²½Êı
+        paint_count3(count); //ÏÔÊ¾²½Êı
 
         for (int i = 0; i < 3; ++i)
         {
             for (int j = 0; j < 3; ++j)
             {
-                Paintshu3(hua3[i][j], j, i);
+                paint_shu3(hua3[i][j], j, i);
             }
         }
         //ÏÔÊ¾ÆåÅÌ
@@ -638,7 +645,7 @@ void choose3() //3*3ÆåÅÌ
                 finalrecord[num].count = count;
                 finalrecord[num ].choice = 3;
                 finalrecord[num].judge = 2;
-                Paintendno();
+                    paintend_no();
                 chushi();
                 break;
             }
@@ -652,7 +659,7 @@ void choose3() //3*3ÆåÅÌ
     finalrecord[num].choice = 3;
     finalrecord[num].judge = 1;
     finalrecord[num].timeused = timeused;
-    Paintendyes();
+    paintend_yes();
     getchar();
     closegraph();
 }
@@ -674,20 +681,20 @@ void choose4() //4*4ÆåÅÌ
 
     //³õÊ¼»¯Ò³Ãæ£¬±³¾°ÉèÖÃÎª°×É«
     time1 = time(NULL);
-    while (!is_well(huarongdao)) //µ±ÆåÅÌ»¹Î´Æ´ºÃ
+    while (!is_well4(huarongdao)) //µ±ÆåÅÌ»¹Î´Æ´ºÃ
     {
 
         cleardevice();
         BeginBatchDraw(); //¿ªÊ¼ÅúÁ¿»æÍ¼
         photo_youxi4();
-        Paintline();
-        Paintcount(count); //ÏÔÊ¾²½Êı
+        paint_line4();
+        paint_count4(count); //ÏÔÊ¾²½Êı
 
         for (int i = 0; i < 4; ++i)
         {
             for (int j = 0; j < 4; ++j)
             {
-                Paintshu(huarongdao[i][j], j, i);
+                paint_shu4(huarongdao[i][j], j, i);
             }
         }
         //ÏÔÊ¾ÆåÅÌ
@@ -708,10 +715,10 @@ void choose4() //4*4ÆåÅÌ
             {
             case 72:
                 row++;
-                if_tra = if_tran(row, col); //¼ì²âºÏ·¨
+                if_tra = if_tran4(row, col); //¼ì²âºÏ·¨
                 if (if_tra)
                 {
-                    tran_pan(row, col, row_n, col_n, huarongdao); //ÒÆ¶¯Î»ÖÃ
+                    tran_pan4(row, col, row_n, col_n, huarongdao); //ÒÆ¶¯Î»ÖÃ
                     count++; //²½Êı¼ÓÒ»
                     row_n = row;
                     col_n = col;
@@ -727,10 +734,10 @@ void choose4() //4*4ÆåÅÌ
                 break;
             case 80:
                 row--;
-                if_tra = if_tran(row, col); //¼ì²âºÏ·¨
+                if_tra = if_tran4(row, col); //¼ì²âºÏ·¨
                 if (if_tra)
                 {
-                    tran_pan(row, col, row_n, col_n, huarongdao); //ÒÆ¶¯Î»ÖÃ
+                    tran_pan4(row, col, row_n, col_n, huarongdao); //ÒÆ¶¯Î»ÖÃ
                     count++; //²½Êı¼ÓÒ»
                     row_n = row;
                     col_n = col;
@@ -746,10 +753,10 @@ void choose4() //4*4ÆåÅÌ
                 break;
             case 75:
                 col++;
-                if_tra = if_tran(row, col); //¼ì²âºÏ·¨
+                if_tra = if_tran4(row, col); //¼ì²âºÏ·¨
                 if (if_tra)
                 {
-                    tran_pan(row, col, row_n, col_n, huarongdao); //ÒÆ¶¯Î»ÖÃ
+                    tran_pan4(row, col, row_n, col_n, huarongdao); //ÒÆ¶¯Î»ÖÃ
                     count++; //²½Êı¼ÓÒ»
                     row_n = row;
                     col_n = col;
@@ -765,10 +772,10 @@ void choose4() //4*4ÆåÅÌ
                 break;
             case 77:
                 col--;
-                if_tra = if_tran(row, col); //¼ì²âºÏ·¨
+                if_tra = if_tran4(row, col); //¼ì²âºÏ·¨
                 if (if_tra)
                 {
-                    tran_pan(row, col, row_n, col_n, huarongdao); //ÒÆ¶¯Î»ÖÃ
+                    tran_pan4(row, col, row_n, col_n, huarongdao); //ÒÆ¶¯Î»ÖÃ
                     count++; //²½Êı¼ÓÒ»
                     row_n = row;
                     col_n = col;
@@ -788,7 +795,7 @@ void choose4() //4*4ÆåÅÌ
                 finalrecord[num].choice = 4;
                 finalrecord[num].judge = 2;
 
-                Paintendno();
+                    paintend_no();
 
                 chushi();
                 break;
@@ -803,7 +810,7 @@ void choose4() //4*4ÆåÅÌ
     finalrecord[num].choice = 4;
     finalrecord[num].judge = 1;
     finalrecord[num].timeused = timeused;
-    Paintendyes();
+    paintend_yes();
     getchar();
     closegraph();
 }
@@ -850,7 +857,7 @@ void tran_pan5(int row, int col, int row_n, int col_n, int pan[][5]) {
     pan[row][col] = 0;
 }
 
-void Paintshu5(int n, int x, int y)
+void paint_shu5(int n, int x, int y)
 {
     settextcolor(BLACK);
     settextstyle(72, 0, "»ªÎÄÖĞËÎ");
@@ -925,7 +932,7 @@ void Paintshu5(int n, int x, int y)
 }
 
 
-void Paintcount5(int n)
+void paint_count5(int n)
 {
     settextcolor(BLACK);
     settextstyle(50, 0, "»ªÎÄÖĞËÎ");
@@ -938,7 +945,7 @@ void Paintcount5(int n)
     outtextxy(350, 700, a);
 }
 
-void Paintline5() {
+void paint_line5() {
     settextcolor(BLACK);
     settextstyle(100, 0, "»ªÎÄÖĞËÎ");
     setcolor(BLUE);
@@ -983,15 +990,15 @@ void choose5()
         cleardevice();
         BeginBatchDraw(); //¿ªÊ¼ÅúÁ¿»æÍ¼
         photo_youxi5();
-        Paintline5();
+        paint_line5();
 
-        Paintcount5(count); //ÏÔÊ¾²½Êı
+        paint_count5(count); //ÏÔÊ¾²½Êı
 
         for (int i = 0; i < 5; ++i)
         {
             for (int j = 0; j < 5; ++j)
             {
-                Paintshu5(huarongdao[i][j], j, i);
+                paint_shu5(huarongdao[i][j], j, i);
             }
         }
         //ÏÔÊ¾ÆåÅÌ
@@ -1091,7 +1098,7 @@ void choose5()
                 finalrecord[num].count = count;
                 finalrecord[num].choice = 5;
                 finalrecord[num].judge = 2;
-                Paintendno();
+                    paintend_no();
 
                 chushi();
                 break;
@@ -1105,7 +1112,7 @@ void choose5()
     finalrecord[num].choice = 5;
     finalrecord[num].judge = 1;
     finalrecord[num].timeused = timeused;
-    Paintendyes();
+    paintend_yes();
     getchar();
     closegraph();
 }
@@ -1183,7 +1190,7 @@ int fileinput()
     return 0;
 }
 
-void Paintendyes() {                                                       //»æÖÆÍê³ÉÓÎÏ·½áÊø½çÃæ
+void paintend_yes() {                                                       //»æÖÆÍê³ÉÓÎÏ·½áÊø½çÃæ
     char c[100] = { 0 };
     setbkcolor(WHITE);
     cleardevice();
@@ -1232,7 +1239,7 @@ void Paintendyes() {                                                       //»æÖ
 
 
 }
-void Paintendno() {                                             //»æÖÆ·ÅÆúÓÎÏ·½çÃæ      
+void paintend_no() {                                             //»æÖÆ·ÅÆúÓÎÏ·½çÃæ
     char c[100] = { 0 };
     setbkcolor(WHITE);
     cleardevice();
@@ -1275,6 +1282,49 @@ void Paintendno() {                                             //»æÖÆ·ÅÆúÓÎÏ·½ç
         switch (a)
         {
         case 1:chushi(); break;
+        }
+    }
+}
+
+void suiji_3(int puzzle[][3], int *empty_row, int *empty_column) {
+    srand(time(NULL));
+
+    int num = 1;
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            puzzle[i][j] = num;
+            num++;
+        }
+    }
+    puzzle[2][2] = 0;
+    *empty_row = 2;
+    *empty_column = 2;
+
+    int count = 200;  //´òÂÒ´ÎÊı¡£¿ÉĞŞ¸Ä
+    for (int i=0; i < count; i++) {
+        // Ëæ»úÑ¡ÔñÏàÁÚµÄÒ»¸öÎ»ÖÃ½øĞĞ½»»»
+        int neighbours[4][2] = { {*empty_row, *empty_column-1}, {*empty_row, *empty_column+1}, {*empty_row-1, *empty_column}, {*empty_row+1, *empty_column} };
+        int neighbours_can[4][2];
+        int neighbours_count = 0;
+        for (int j=0; j<4; j++) {
+            int row = neighbours[j][0], column = neighbours[j][1];
+            if (row >= 0 && row < 3 && column >= 0 && column < 3) {
+                neighbours_can[neighbours_count][0] = row;
+                neighbours_can[neighbours_count][1] = column;
+                neighbours_count++;
+            }
+        }
+
+        if (neighbours_count != 0) {
+            int rand_index = rand() % neighbours_count;
+            int chosen_row = neighbours_can[rand_index][0], chosen_column = neighbours_can[rand_index][1];
+            // ½»»»Êı×ÖºÍ¿Õ¸ñÎ»ÖÃ
+            int temp = puzzle[chosen_row][chosen_column];
+            puzzle[chosen_row][chosen_column] = puzzle[*empty_row][*empty_column];
+            puzzle[*empty_row][*empty_column] = temp;
+            // ¸üĞÂ¿Õ¸ñÎ»ÖÃ
+            *empty_row = chosen_row;
+            *empty_column = chosen_column;
         }
     }
 }
