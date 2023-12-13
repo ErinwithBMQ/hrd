@@ -474,14 +474,14 @@ void tran_pan3(int row, int col, int row_n, int col_n, int pan[][3]) {
 void paint_shu3(int n, int x, int y)
 {
     settextcolor(BLACK);
-    settextstyle(90, 0, "华文中宋");
+    settextstyle(120, 0, "华文中宋");
     setcolor(BLUE);
     setbkmode(TRANSPARENT);
     //设置字体格式
     if (n >= 1 && n <= 8)
     {
         char a = n + '0';
-        outtextxy(130 + x * 133, 210 + y * 133, a);
+        outtextxy(133 + x * 133, 210 + y * 133, a);
     }
 }
 
