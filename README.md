@@ -38,6 +38,6 @@ github网址：https://github.com/ErinwithBMQ/hrd
 
 ***最后祝大家玩得开心！***
 
->本小组作业组长：乔昕雨（ErinwithBMQ）
+>本小组作业组长：qxy（ErinwithBMQ）
 >
->组员：王文妺 张馨月 袁锦立
+>组员：wwm zxy yjl
